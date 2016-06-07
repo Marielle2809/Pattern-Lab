@@ -704,7 +704,7 @@ class Builder {
 					// set-up the names
 					// $patternFull is defined above                                                     00-colors.mustache
 					$patternBits     = explode("~",$patternFull);
-					$patternBase     = $patternBits[0].".mustache";                                   // 00-homepage.mustache
+					$patternBase     = $patternBits[0].".mustache";                                   // 00-tile.mustache
 					$patternBaseDash = $this->getPatternName($patternBits[0],false);                  // homepage
 					$patternBaseJSON = $patternBits[0].".json";                                       // 00-homepage.json
 					$stripJSON       = str_replace(".json","",$patternBits[1]);
