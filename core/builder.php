@@ -62,55 +62,58 @@ $console->setCommand("v","version","Print the version number","The version comma
 $console->getArguments();
 
 if ($console->findCommand("h|help") && ($command = $console->getCommand())) {
-	
+
 	// write the usage & help for a specific command
 	$console->writeHelpCommand($command);
-	
+
 } else if ($command = $console->getCommand()) {
-	
+
 	// run commands
-	
+
 	// load Pattern Lab's config, if first time set-up move files appropriately too
 	$configurer = new PatternLab\Configurer;
 	$config     = $configurer->getConfig();
-	
+
 	// set-up required vars
 	$enableCSS     = ($console->findCommandOption("c|enablecss")) ? true : false;
 	$moveStatic    = ($console->findCommandOption("p|patternsonly")) ? false : true;
 	$noCacheBuster = ($console->findCommandOption("n|nocache")) ? true : false;
 	$autoReload    = ($console->findCommandOption("r|autoreload")) ? true : false;
-	
+
 	if (($command == "g") || ($command == "b")) {
-		
+
 		// load the generator
+//		var_dump($enableCSS);
+//		die();
+
 		$g = new PatternLab\Generator($config);
 		$g->generate($enableCSS,$moveStatic,$noCacheBuster);
 		$g->printSaying();
-		
+
 	} else if ($command == "w") {
-		
+
 		// CSS feature should't be used with watch
 		$enableCSS = false;
-		
+
 		// load the generator
 		$g = new PatternLab\Generator($config);
 		$g->generate($enableCSS,$moveStatic,$noCacheBuster);
-		
+
 		// load the watcher
 		$w = new PatternLab\Watcher($config);
 		$w->watch($autoReload,$moveStatic,$noCacheBuster);
-		
+
 	} else if ($command == "v") {
-		
+
 		// write out the version number
 		print "You're running v".$config["v"]." of the PHP version of Pattern Lab.\n";
 		exit;
-		
+
 	}
-	
+
 } else {
-	
+
 	// write the generic help
 	$console->writeHelp();
-	
+
 }

@@ -1,54 +1,64 @@
-@import "scss/generic/variables";
-@import "scss/generic/mixins";
-@import "scss/generic/reset";
+/*------------------------------------*\
+    BASE
+\*------------------------------------*/
+
+@import "scss/base/rhythm";
+@import "scss/base/breakpoint";
+@import "scss/base/layout";
+@import "scss/base/colour";
+@import "scss/base/typography";
+@import "scss/base/icons";
+@import "scss/base/reset";
 
 /*------------------------------------*\
-    $GLOBAL ELEMENTS
+    ELEMENTS
 \*------------------------------------*/
-@import "scss/base/global-classes";
-@import "scss/base/main";
-@import "scss/base/links";
-@import "scss/base/headings";
-@import "scss/base/text";
-@import "scss/base/lists";
-@import "scss/base/media";
-@import "scss/base/forms";
-@import "scss/base/tables";
-@import "scss/base/animation";
+
+@import "scss/elements/anchor";
+@import "scss/elements/heading";
+@import "scss/elements/text";
+@import "scss/elements/form";
+@import "scss/elements/button";
+@import "scss/elements/list";
+@import "scss/elements/table";
+@import "scss/elements/image";
+@import "scss/elements/icon";
+@import "scss/elements/box";
+@import "scss/elements/fx";
 
 /*------------------------------------*\
-    $LAYOUT
+    Blocks
 \*------------------------------------*/
-@import "scss/objects/layout";
 
-
-/*------------------------------------*\
-    $PAGE STRUCTURE
-\*------------------------------------*/
-@import "scss/objects/header";
-@import "scss/objects/nav";
-@import "scss/objects/main";
-@import "scss/objects/footer";
-
-
-
-/*------------------------------------*\
-    $TEXT Styles
-\*------------------------------------*/
-@import "scss/objects/text";
+@import "scss/blocks/tile";
+@import "scss/blocks/notice";
+@import "scss/blocks/tag";
+@import "scss/blocks/label";
+@import "scss/blocks/rating";
+@import "scss/blocks/pagination";
+@import "scss/blocks/price";
+@import "scss/blocks/search";
+@import "scss/blocks/navigation";
 
 
 /*------------------------------------*\
-    $COMPONENTS
+    Modules
 \*------------------------------------*/
-@import "scss/objects/icons";
-@import "scss/objects/buttons";
-@import "scss/objects/blocks";
-@import "scss/objects/lists";
-@import "scss/objects/tooltip";
-@import "scss/objects/accordion";
-@import "scss/objects/tabs";
-@import "scss/objects/sections";
-@import "scss/objects/article";
-@import "scss/objects/comments";
-@import "scss/objects/messaging";
+
+@import "scss/modules/header";
+@import "scss/modules/footer";
+@import "scss/modules/lead-article";
+@import "scss/modules/channels";
+
+
+/*------------------------------------*\
+    Layout
+\*------------------------------------*/
+
+@import "scss/layout/container";
+@import "scss/layout/wings";
+@import "scss/layout/gutters";
+@import "scss/layout/media";
+@import "scss/layout/leader";
+@import "scss/layout/trailer";
+@import "scss/layout/grid";
