@@ -1,7 +1,14 @@
 /*------------------------------------*\
+    Piecss
+\*------------------------------------*/
+
+@import "piecss/utilities";
+
+/*------------------------------------*\
     BASE
 \*------------------------------------*/
 
+@import "scss/base/base";
 @import "scss/base/rhythm";
 @import "scss/base/breakpoint";
 @import "scss/base/layout";

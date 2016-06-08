@@ -9,7 +9,7 @@
 var codeViewer = {
 	
 	// set up some defaults
-	codeActive:   false,
+	codeActive:   true,
 	tabActive:    "e",
 	encoded:      "",
 	mustache:     "",

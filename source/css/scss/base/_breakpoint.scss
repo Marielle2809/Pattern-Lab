@@ -1,3 +1,24 @@
 /*------------------------------------*\
     01-Breakpoints
 \*------------------------------------*/
+
+$lt-small-handheld: "(max-width: #{to-unit(319px,$unit,$font-size)})";
+$gt-small-handheld: "(min-width: #{to-unit(320px,$unit,$font-size)})";
+
+$lt-medium-handheld: "(max-width: #{to-unit(519px,$unit,$font-size)})";
+$gt-medium-handheld: "(min-width: #{to-unit(520px,$unit,$font-size)})";
+
+$lt-large-handheld: "(max-width: #{to-unit(767px,$unit,$font-size)})";
+$gt-large-handheld: "(min-width: #{to-unit(768px,$unit,$font-size)})";
+
+$lt-small-desktop: "(max-width: #{to-unit(1023px,$unit,$font-size)})";
+$gt-small-desktop: "(min-width: #{to-unit(1024px,$unit,$font-size)})";
+
+$lt-medium-desktop: "(max-width: #{to-unit(1259px,$unit,$font-size)})";
+$gt-medium-desktop: "(min-width: #{to-unit(1260px,$unit,$font-size)})";
+
+$lt-large-desktop: "(max-width: #{to-unit(1439px,$unit,$font-size)})";
+$gt-large-desktop: "(min-width: #{to-unit(1440px,$unit,$font-size)})";
+
+$portrait: "(orientation: portrait)";
+$landscape: "(orientation: landscape)";
