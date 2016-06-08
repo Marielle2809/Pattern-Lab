@@ -949,5 +949,11 @@ div.clear {
 	content: "\e60b";
 }
 
+.lc, .header, [role=main] {
+  max-width: 72em;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+
 /******************************************************************/
 /* End Pattern Lab Interface code */
